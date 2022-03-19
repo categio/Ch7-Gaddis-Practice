@@ -15,5 +15,22 @@ namespace Random_Card
         {
             InitializeComponent();
         }
+
+        private void getCardButton_Click(object sender, EventArgs e)
+        {
+            //create Random object
+            Random rando = new Random();
+
+            //get random index
+            int index = rando.Next(cardImageList.Images.Count);
+
+            //display a card
+            cardPictureBox.Image = cardImageList.Images[index];
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
