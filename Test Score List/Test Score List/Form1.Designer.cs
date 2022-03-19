@@ -109,6 +109,7 @@
             this.getScoresButton.TabIndex = 7;
             this.getScoresButton.Text = "Get Scores";
             this.getScoresButton.UseVisualStyleBackColor = true;
+            this.getScoresButton.Click += new System.EventHandler(this.getScoresButton_Click);
             // 
             // exitButton
             // 
@@ -118,6 +119,7 @@
             this.exitButton.TabIndex = 8;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // Form1
             // 
@@ -135,6 +137,7 @@
             this.Controls.Add(this.testScoresListBox);
             this.Name = "Form1";
             this.Text = "Test Score List";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
