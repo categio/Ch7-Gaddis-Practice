@@ -37,6 +37,7 @@
             this.txtRow = new System.Windows.Forms.TextBox();
             this.exitButton = new System.Windows.Forms.Button();
             this.displayPriceButton = new System.Windows.Forms.Button();
+            this.clearButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.airplanePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,27 +106,40 @@
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(220, 554);
+            this.exitButton.Location = new System.Drawing.Point(272, 554);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 38);
             this.exitButton.TabIndex = 23;
-            this.exitButton.Text = "Exit";
+            this.exitButton.Text = "E&xit";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // displayPriceButton
             // 
-            this.displayPriceButton.Location = new System.Drawing.Point(139, 554);
+            this.displayPriceButton.Location = new System.Drawing.Point(93, 554);
             this.displayPriceButton.Name = "displayPriceButton";
             this.displayPriceButton.Size = new System.Drawing.Size(75, 38);
             this.displayPriceButton.TabIndex = 22;
-            this.displayPriceButton.Text = "Display Price";
+            this.displayPriceButton.Text = "&Display Price";
             this.displayPriceButton.UseVisualStyleBackColor = true;
+            this.displayPriceButton.Click += new System.EventHandler(this.displayPriceButton_Click);
+            // 
+            // clearButton
+            // 
+            this.clearButton.Location = new System.Drawing.Point(183, 554);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(75, 38);
+            this.clearButton.TabIndex = 24;
+            this.clearButton.Text = "&Clear";
+            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(434, 604);
+            this.Controls.Add(this.clearButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.displayPriceButton);
             this.Controls.Add(this.priceLabel);
@@ -154,6 +168,7 @@
         internal System.Windows.Forms.TextBox txtRow;
         internal System.Windows.Forms.Button exitButton;
         internal System.Windows.Forms.Button displayPriceButton;
+        internal System.Windows.Forms.Button clearButton;
     }
 }
 
