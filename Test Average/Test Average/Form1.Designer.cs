@@ -38,6 +38,7 @@
             this.averageScoreLabel = new System.Windows.Forms.Label();
             this.getScoresButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
+            this.clearButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // averageScoreDescriptionLabel
@@ -113,27 +114,40 @@
             // 
             // getScoresButton
             // 
-            this.getScoresButton.Location = new System.Drawing.Point(90, 149);
+            this.getScoresButton.Location = new System.Drawing.Point(38, 149);
             this.getScoresButton.Name = "getScoresButton";
             this.getScoresButton.Size = new System.Drawing.Size(75, 23);
             this.getScoresButton.TabIndex = 13;
-            this.getScoresButton.Text = "Get Scores";
+            this.getScoresButton.Text = "&Get Scores";
             this.getScoresButton.UseVisualStyleBackColor = true;
+            this.getScoresButton.Click += new System.EventHandler(this.getScoresButton_Click);
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(171, 149);
+            this.exitButton.Location = new System.Drawing.Point(206, 149);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 23);
             this.exitButton.TabIndex = 14;
-            this.exitButton.Text = "Exit";
+            this.exitButton.Text = "E&xit";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // clearButton
+            // 
+            this.clearButton.Location = new System.Drawing.Point(121, 149);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(75, 23);
+            this.clearButton.TabIndex = 15;
+            this.clearButton.Text = "&Clear";
+            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(336, 187);
+            this.Controls.Add(this.clearButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.getScoresButton);
             this.Controls.Add(this.averageScoreLabel);
@@ -146,6 +160,7 @@
             this.Controls.Add(this.testScoresDescriptionLabel);
             this.Name = "Form1";
             this.Text = "Test Average";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,6 +178,7 @@
         private System.Windows.Forms.Label averageScoreLabel;
         private System.Windows.Forms.Button getScoresButton;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button clearButton;
     }
 }
 
